@@ -1,0 +1,101 @@
+/* ═══════════════════════════════════════════════════════════
+   PrivChat — Auth Page Styles (Clean & Production Ready)
+   ═══════════════════════════════════════════════════════════ */
+
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: var(--space-4);
+  padding-top: calc(var(--space-4) + var(--safe-top));
+  padding-bottom: calc(var(--space-4) + var(--safe-bottom));
+  position: relative;
+  width: 100%;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: var(--space-6);
+  animation: scaleIn var(--transition-spring) ease-out;
+  margin: auto;
+}
+
+.auth-logo {
+  text-align: center;
+  margin-bottom: var(--space-5);
+}
+
+.auth-logo-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto var(--space-2);
+  background: var(--accent-gradient);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  box-shadow: var(--accent-glow);
+  animation: float 6s ease-in-out infinite;
+}
+
+.auth-logo h1 {
+  font-size: clamp(1.6rem, 5vw, var(--font-3xl));
+  margin-bottom: 2px;
+}
+
+.auth-logo p {
+  color: var(--text-secondary);
+  font-size: var(--font-xs);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.code-input {
+  font-family: var(--font-mono);
+  font-size: var(--font-lg);
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  min-height: 50px;
+}
+
+.auth-form .btn-primary {
+  min-height: 50px;
+  font-size: var(--font-base);
+  margin-top: 4px;
+}
+
+.auth-toggle {
+  text-align: center;
+  margin-top: var(--space-4);
+}
+
+.auth-toggle button {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-family: var(--font-family);
+  font-size: var(--font-sm);
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: color var(--transition-fast);
+  padding: var(--space-2);
+}
+
+.auth-toggle button:hover {
+  color: var(--accent-start);
+}
+
+@media (min-width: 640px) {
+  .auth-card {
+    padding: var(--space-8);
+  }
+}
